@@ -22,6 +22,7 @@
 		E87E90DE21286A9A00B75565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E87E90E121286A9A00B75565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E87E90E321286A9A00B75565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E87E90E921286AB800B75565 /* applePayAndIAP_demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = applePayAndIAP_demo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		E87E90D621286A9700B75565 /* applePayAndIAP_demo */ = {
 			isa = PBXGroup;
 			children = (
+				E87E90E921286AB800B75565 /* applePayAndIAP_demo.entitlements */,
 				E87E90D721286A9700B75565 /* AppDelegate.swift */,
 				E87E90D921286A9700B75565 /* ViewController.swift */,
 				E87E90DB21286A9700B75565 /* Main.storyboard */,
@@ -96,6 +98,11 @@
 				TargetAttributes = {
 					E87E90D321286A9700B75565 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -280,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = applePayAndIAP_demo/applePayAndIAP_demo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCPU83AAPV;
 				INFOPLIST_FILE = applePayAndIAP_demo/Info.plist;
@@ -298,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = applePayAndIAP_demo/applePayAndIAP_demo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCPU83AAPV;
 				INFOPLIST_FILE = applePayAndIAP_demo/Info.plist;
