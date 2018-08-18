@@ -41,6 +41,7 @@ class ViewController: UIViewController,PKPaymentAuthorizationViewControllerDeleg
     
     func setupPaymentButton(){
         PaymentButton.frame = CGRect(origin: view.center, size: CGSize(width: 200, height: 100))
+        view.addSubview(PaymentButton)
         PaymentButton.addTarget(self, action: #selector(hanldePayment), for: UIControlEvents.touchUpInside)
     }
     
